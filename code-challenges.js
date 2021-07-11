@@ -21,12 +21,10 @@ var temp3 = 212
 
 // That function needs to take an argument of a temperature
 
-// const boilingPoint = (temp) => {
-// }
-
-// Then it needs to take the argument of temp and compare it to the baseline of boiling point using relational and equality operators. Then based on that comparison return a statement that includes the temperature given and whether that temperature was at, below or above boiling point.
 const boilingPoint = (temp) => {
+  // Then it needs to take the argument of temp and compare it to the baseline of boiling point using relational and equality operators.
   if(temp === 212){
+     // Then based on that comparison return a statement that includes the temperature given and whether that temperature was at, below or above boiling point.
     return "212 is at boiling point"
   }else if(temp > 212){
     return `${temp} is above boiling point`
@@ -132,9 +130,10 @@ var numberExample4 = 19
 // const subtraction = (num1, num2) =>{
 // }
 
-// The function needs to take those two numbers and subtract the smaller from the larger. SO we first need to figure out which one is smaller and which is larger. We should also account for equal numbers.
+// The function needs to take those two numbers and subtract the smaller from the larger.
 
 // if(num1 === num2){
+// SO we first need to figure out which one is smaller and which is larger.We should also account for equal numbers.
 //   return "numbers are equal"
 // }else if(num1 < num2){
 //   return num2 - num1
@@ -167,18 +166,6 @@ var numberExampleRefactor4 = 24
 
 // copy and paste your code from #4
 
-// const subtraction = (num1, num2) =>{
-//   if(num1 === num2){
-//     return "numbers are equal"
-//   }else if(num1 < num2){
-//     return num2 - num1
-//   }else{
-//     return num1 - num2
-//   }
-// }
-
-// Refactor the code to inform the user if the variable passed through is not a number
-
 const subtraction = (num1, num2) =>{
   if(num1 === num2){
     return "numbers are equal"
@@ -186,13 +173,14 @@ const subtraction = (num1, num2) =>{
     return num2 - num1
   }else if(num1 > num2){
     return num1 - num2
+    // Refactor the code to inform the user if the variable passed through is not a number
   }else{
     return "Your input is not a number"
   }
 }
 console.log(subtraction(numberExampleRefactor3, numberExampleRefactor4))
 
-// Well, the code above worked, but there is a hint for using type of. So, I will try it out with type of and see what kind of code I get and if I can get it to work. I'll start with figuring out if our variable is a number or not.
+// Well, the code above worked, but there is a hint for using typeof. So, I will try it out with type of and see what kind of code I get and if I can get it to work. I'll start with figuring out if our variable is a number or not.
 
 // if(typeof num1 === "number"){
 //   if(num1 === num2){
